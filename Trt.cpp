@@ -28,7 +28,7 @@ using NDCFLAG = nvinfer1::NetworkDefinitionCreationFlag;
 Trt::Trt() {
     mBuilder = nvinfer1::createInferBuilder(mLogger);
     mConfig = mBuilder->createBuilderConfig();
-    mProfile = mBuilder->createOptimizationProfile();
+    //mProfile = mBuilder->createOptimizationProfile();
 }
 
 Trt::~Trt() {
